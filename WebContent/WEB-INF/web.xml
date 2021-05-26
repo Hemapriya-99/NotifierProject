@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>NotifierApplication</display-name>
+  <welcome-file-list>
+ <welcome-file>Login.jsp</welcome-file>
+ </welcome-file-list>
+ <servlet>
+ <description></description>
+ <display-name>RegisterServlet</display-name>
+ <servlet-name>RegisterServlet</servlet-name>
+ <servlet-class>com.app.controller.RegisterServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>RegisterServlet</servlet-name>
+ <url-pattern>/RegisterServlet</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+     <description></description>
+     <display-name>LoginServlet</display-name>
+     <servlet-name>LoginServlet</servlet-name>
+     <servlet-class>com.app.controller.LoginServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+     <servlet-name>LoginServlet</servlet-name>
+     <url-pattern>/LoginServlet</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+     <description></description>
+     <display-name>NoteBookServlet</display-name>
+     <servlet-name>NoteBookServlet</servlet-name>
+     <servlet-class>com.app.controller.NoteBookServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+     <servlet-name>NoteBookServlet</servlet-name>
+     <url-pattern>/NoteBookServlet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+     <description></description>
+     <display-name>AddNotesServlet</display-name>
+     <servlet-name>AddNotesServlet</servlet-name>
+     <servlet-class>com.app.controller.AddNotesServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+     <servlet-name>AddNotesServlet</servlet-name>
+     <url-pattern>/AddNotesServlet</url-pattern>
+ </servlet-mapping>
+ 
+<servlet>
+     <description></description>
+     <display-name>EditNotesServlet</display-name>
+     <servlet-name>EditNotesServlet</servlet-name>
+     <servlet-class>com.app.controller.EditNotesServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+     <servlet-name>EditNotesServlet</servlet-name>
+     <url-pattern>/EditNotesServlet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+     <description></description>
+     <display-name>UserDetailServlet</display-name>
+     <servlet-name>UserDetailServlet</servlet-name>
+     <servlet-class>com.app.controller.UserDetailServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+     <servlet-name>UserDetailServlet</servlet-name>
+     <url-pattern>/UserDetailServlet</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+ <servlet>
+     <description></description>
+     <display-name>LogoutServlet</display-name>
+     <servlet-name>LogoutServlet</servlet-name>
+     <servlet-class>com.app.controller.LogoutServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+     <servlet-name>LogoutServlet</servlet-name>
+     <url-pattern>/LogoutServlet</url-pattern>
+ </servlet-mapping>
+ 
+</web-app>
